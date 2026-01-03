@@ -18,6 +18,8 @@ This app uses a Python backend (e.g., Flask) to serve an interface where users c
 ---
 ## 🎥 Demo Video
 
+
+https://github.com/user-attachments/assets/e0ebbf25-b36d-48f9-9c7d-f1dc4d5ab6ea
 [Watch Demo](assets/diabetes-app-vid.mp4)
 
 
