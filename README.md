@@ -28,10 +28,12 @@ This app uses a Python backend (e.g., Flask) to serve an interface where users c
 
 📦 diabetes-app
 ┣ 📂 static/
+┣  ┣ styles.css
 ┣ 📂 templates/
-┣ ┣ index.html
-┣ ┣ result.html
-┣ ┣ ...
+┣  ┣ index.html
+┣ 📂 assets/
+┣  ┣ diabetes-app-vid.mp4
+┣ 
 ┣ 📄 app.py
 ┣ 📄 train_model.py
 ┣ 📄 model.pkl
