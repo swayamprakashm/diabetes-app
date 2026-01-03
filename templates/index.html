@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h2 class="title">Diabetes Prediction</h2>
+
+    <form method="POST" action="/predict">
+
+        <label>Glucose Level</label>
+        <input type="number" name="glucose" step="0.1" placeholder="Enter glucose value" required>
+
+        <label>BMI</label>
+        <input type="number" name="bmi" step="0.1" placeholder="Enter BMI" required>
+
+        <label>Age</label>
+        <input type="number" name="age" step="0.1" placeholder="Enter age" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if risk_level is not none %}
+        <div class="result {{ risk_level }}">
+
+            {% if risk_level == 'high' %}
+                ❗ <strong>High Diabetes Risk</strong>
+
+            {% elif risk_level == 'moderate' %}
+                ⚠️ <strong>Moderate Diabetes Risk</strong>
+
+            {% else %}
+                ✔ <strong>Normal / Low Diabetes Risk</strong>
+            {% endif %}
+
+            <br><br>
+            <strong>Probability:</strong> {{ probability }}
+        </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    background: linear-gradient(to bottom right, #e9f0f7, #3f95eb);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 420px;
+    background: #fff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 94%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1.8px solid #d9d9d9;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+input:focus {
+    border-color: #4b7bec;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #4b7bec;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #3867d6;
+}
+
+.result {
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 15px;
+    border-left: 6px solid;
+}
+
+/* Normal / Low Risk (Green) */
+.normal {
+    background: #d9fbea;
+    border-color: #24b05c;
+}
+
+/* Moderate Risk (Yellow) */
+.moderate {
+    background: #fff7cc;
+    border-color: #e6c200;
+}
+
+/* High Risk (Red) */
+.high {
+    background: #ffe2e2;
+    border-color: #e84141;
+}
+
+.normal {
+    background: #d9fbea;
+    border-color: #24b05c;
+}
+
+.moderate {
+    background: #fff7cc;
+    border-color: #e6c200;
+}
+
+.high {
+    background: #ffe2e2;
+    border-color: #e84141;
+}
