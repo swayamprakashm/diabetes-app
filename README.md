@@ -16,10 +16,9 @@ This app uses a Python backend (e.g., Flask) to serve an interface where users c
 ✔ Trained model stored separately (`model.pkl`)
 
 ---
-
 ## 🎥 Demo Video
 
-[Demo Video](assets/diabetes-app-vid.mp4)
+[![Watch Demo](assets/demo.png)](assets/diabetes-app-vid.mp4)
 
 ---
 ## 📁 Project Structure
